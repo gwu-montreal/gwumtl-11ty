@@ -1,0 +1,17 @@
+---
+title: 'Localization'
+data:
+  - {
+      key: 'sitedesc',
+      t: 'The Game Workers Coalition is an international collective of labour organizations in the videogames industry.',
+    }
+
+  - { key: 'en', t: 'English' }
+  - { key: 'fr', t: 'French' }
+  - { key: 'header_whoweare', t: 'Who We Are' }
+  - { key: 'header_newsandinfo', t: 'Zines and Info' }
+  - { key: 'header_getinvolved', t: 'Get Involved!' }
+  - { key: 'header_backtohome', t: 'Back to Home' }
+  - { key: 'header_email', t: 'Email' }
+
+  - { key: 'footer-backtotop', t: 'Back to Top' }

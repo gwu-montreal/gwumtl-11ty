@@ -1,0 +1,95 @@
+html {
+  background-color: var(--site-bg-color);
+  font-size: 12px;
+
+  @media (min-width: 300px) {
+    font-size: 14px;
+  }
+
+  @media (min-width: 400px) {
+    font-size: 16px;
+  }
+
+  @media (min-width: 800px) {
+    font-size: 18px;
+  }
+}
+
+/* #container is the rectangle that contains everything but the background */
+
+#container,
+.column {
+  display: flex;
+  flex-flow: column nowrap;
+  align-content: stretch;
+  width: 100%;
+}
+
+#container {
+  min-height: 100vh;
+}
+
+.column {
+  max-width: var(--column-width);
+  margin: 0 auto;
+  padding: 0 var(--default-gap);
+  overflow: hidden;
+
+  & > * {
+    width: 100%;
+  }
+}
+
+body {
+  font-family: var(--font-body);
+  line-height: 1.75;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.header {
+  margin-top: 0;
+  margin-bottom: 0.8em;
+  font-family: var(--font-header);
+  color: var(--accent-font-color);
+}
+
+h1 {
+  font-size: 2.4rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.6rem;
+}
+h4 {
+  font-size: 1.4rem;
+}
+h5 {
+  font-size: 1.2rem;
+}
+h6 {
+  font-size: 1.1rem;
+}
+
+ul {
+  margin: 0;
+  padding-left: 1em;
+  list-style-type: disc;
+}
+
+a {
+  color: var(--accent-font-color);
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}

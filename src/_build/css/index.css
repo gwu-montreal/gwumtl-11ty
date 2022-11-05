@@ -1,0 +1,11 @@
+.block {
+  margin-bottom: var(--block-gap);
+
+  &.left {
+    padding-right: 15rem;
+  }
+
+  &.right {
+    padding-left: 15rem;
+  }
+}

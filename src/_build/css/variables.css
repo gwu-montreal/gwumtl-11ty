@@ -1,0 +1,19 @@
+:root {
+  /* Dimensions */
+  --column-width: 1200px;
+  --default-gap: 3rem;
+  --header-gap: 1rem;
+  --block-gap: 6rem;
+
+  /* BG colors */
+  --site-bg-color: #eee;
+
+  /* Fonts */
+  --font-body: 'Plex';
+  --font-header: 'Poppins';
+
+  /* Font colors */
+  --header-font-color: #fff;
+  --body-font-color: #333;
+  --accent-font-color: #e7382d;
+}

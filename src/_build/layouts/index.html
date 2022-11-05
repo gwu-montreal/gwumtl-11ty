@@ -1,0 +1,62 @@
+---
+layout: default
+---
+
+<div id="header">
+  <nav class="column">
+    <div id="nav-row">
+      <div id="nav-scroll">
+        {% set headerlinks = [['info', 'header_whoweare'], ['resources',
+        'header_newsandinfo'], ['join', 'header_getinvolved']] %} {% for link,
+        label in headerlinks -%}
+        <div>
+          <a href="#{{ link }}" class="header-link">{{ label | i18n }}</a>
+        </div>
+        {%- endfor %}
+      </div>
+
+      <div id="nav-social">
+        <div>
+          <a href="mailto:gwumontreal@gmail.com">
+            <img
+              alt="{{ 'header_email' | i18n }}"
+              src="/assets/img/email.svg"
+            />
+          </a>
+        </div>
+        <div>
+          <a href="{{ 'https://twitter.com/'+siteinfo.twitter }}">
+            <img alt="Twitter" src="/assets/img/twitter.svg" />
+          </a>
+        </div>
+        <div>
+          <a href="{{ 'https://facebook.com/'+siteinfo.facebook }}">
+            <img alt="Facebook" src="/assets/img/facebook.svg" />
+          </a>
+        </div>
+      </div>
+
+      <div id="nav-lang">
+        {% for link in page.url | locale_links %}
+        <div>
+          <a
+            href="{{ link.url }}"
+            lang="{{ link.lang }}"
+            hreflang="{{ link.lang }}"
+            >{{ link.label }}</a
+          >
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </nav>
+
+  <div id="header-title" class="column">
+    <img alt="Logo" src="{{ '/assets/img/gwu-logo-'+page.lang+'.svg' }}" />
+    <h1>GAME WORKERS UNITE MONTRÉAL</h1>
+  </div>
+</div>
+
+<main id="content" class="column">{{ content | safe }}</main>
+
+<div id="footer"></div>
